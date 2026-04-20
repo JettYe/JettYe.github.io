@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TZ-SELF-HELP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/menu-config.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <span class="brand-tag">TZ-SELF-HELP</span>
+          <div>
+            <h1 class="brand-title">故障自助处理中心</h1>
+          </div>
+        </div>
+      </header>
+
+      <aside class="sidebar">
+        <div class="sidebar-head">
+          <p class="sidebar-kicker">功能导航</p>
+          <h2>功能目录</h2>
+        </div>
+        <nav id="menu-tree" class="menu-tree" aria-label="功能菜单"></nav>
+      </aside>
+
+      <main class="workspace">
+        <section class="workspace-head">
+          <div>
+            <p id="page-kicker" class="workspace-kicker">欢迎页</p>
+            <h2 id="page-title" class="workspace-title">TZ-SELF-HELP</h2>
+            <p id="page-description" class="workspace-copy">
+              请选择左侧菜单，右侧会加载对应的独立子页面。
+            </p>
+          </div>
+        </section>
+
+        <section class="content-shell">
+          <iframe
+            id="content-frame"
+            class="content-frame"
+            title="内容页"
+            src="pages/welcome.html"
+          ></iframe>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

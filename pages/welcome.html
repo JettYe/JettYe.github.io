@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>欢迎页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/content-page.css" />
+  </head>
+  <body class="content-page">
+    <main class="page-layout">
+      <section class="page-hero">
+        <p class="eyebrow">TZ-SELF-HELP</p>
+        <h1>ERP 故障自助处理主页</h1>
+        <p>
+          这个站点已经按 GitHub Pages 的静态结构预置完成，左侧导航负责菜单树，右侧统一加载独立子页面。
+          后续每个子功能都可以单独增加自己的 HTML 和 JS，不会混到一个大文件里。
+        </p>
+        <div class="hero-grid">
+          <article class="stat-card">
+            <span class="status-pill status-live">已就位</span>
+            <h3>主壳结构已就位</h3>
+            <p>顶部品牌、左侧树形菜单、右侧内容区都已经固定下来。</p>
+          </article>
+          <article class="stat-card">
+            <span class="status-pill status-live">就绪</span>
+            <h3>独立子页模式</h3>
+            <p>每个实际功能页都可以落到自己的目录和脚本里，便于后续扩展。</p>
+          </article>
+          <article class="stat-card">
+            <span class="status-pill status-pending">预置</span>
+            <h3>功能从菜单逐步填充</h3>
+            <p>当前已把“禁用车牌”做成真实维护页，其他节点保留占位入口。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="section-kicker">使用方式</p>
+            <h2>当前建议的使用方式</h2>
+          </div>
+        </div>
+        <ul class="bullet-list">
+          <li>点击一级菜单可以进入对应业务域的总览页。</li>
+          <li>带子级的菜单会保留树形结构，方便继续往下扩展。</li>
+          <li>未指定内容的菜单现在统一提示“未开发”，避免空白页面造成误解。</li>
+          <li>“公路舱单 / 确报 / 禁用车牌”已经可以生成可直接复制的 SQL 模板。</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

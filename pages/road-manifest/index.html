@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>公路舱单</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/css/content-page.css" />
+  </head>
+  <body class="content-page">
+    <main class="page-layout">
+      <section class="page-hero">
+        <p class="eyebrow">公路舱单</p>
+        <h1>公路舱单总览</h1>
+        <p>公路舱单已经预置了两个二级节点：舱单、确报。确报下继续展开三级节点“禁用车牌”，并已实现维护页面。</p>
+        <span class="path-chip">左侧路径: 公路舱单</span>
+      </section>
+
+      <section class="page-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="section-kicker">结构</p>
+            <h2>菜单结构说明</h2>
+          </div>
+        </div>
+        <div class="panel-grid">
+          <article class="info-card">
+            <span class="status-pill status-pending">待建</span>
+            <h3>舱单</h3>
+            <p>点击后当前提示未开发，后续建议单独新增 `pages/road-manifest/manifest.html`。</p>
+          </article>
+          <article class="info-card">
+            <span class="status-pill status-live">启用</span>
+            <h3>确报 / 禁用车牌</h3>
+            <p>已可通过输入香港车牌生成对应 SQL，便于快速维护。</p>
+          </article>
+        </div>
+        <div class="notice">
+          当前可直接从左侧进入：公路舱单 / 确报 / 禁用车牌。
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
